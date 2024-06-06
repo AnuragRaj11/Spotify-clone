@@ -7,7 +7,7 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,19 +28,9 @@
                     <h2> Your Libary </h2>
                 </div>
 
-                <div class="songlist">
+                <div class="songList">
                     <ul>
-                        <li>
-                            <img class="invert" src="imgs/music.svg" alt="">
-                            <div class="info">
-                                <div>Song Name</div>
-                                <div>Song Artist</div>
-                            </div>
-                            <div class="playnow">
-                                <span>Playnow</span>
-                                <img class="invert" src="imgs/play.svg" alt="">
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
 
@@ -101,9 +91,41 @@
                         <p>Artist</p>
                     </div>
                 </div>
-
             </div>
 
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img width="35" id="previous" src="imgs/prevsong.svg" alt="">
+                        <img width="35" id="play" src="imgs/play.svg" alt="">
+                        <img width="35" id="next" src="imgs/nextsong.svg" alt="">
+                    </div>
+
+                    <div class="timevol">
+
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25px" src="imgs/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
     </div>

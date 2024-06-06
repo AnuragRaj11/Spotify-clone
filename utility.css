@@ -40,3 +40,15 @@
     padding: 15px;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
