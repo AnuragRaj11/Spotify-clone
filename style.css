@@ -362,15 +362,15 @@ body {
         width: calc(100vw - 110px);
     }
 
-    .hamburger {
+    .ham {
         display: block;
     }
 
     .card {
-        width: 35vw;
+        width: 25vw;
     }
 
-    .cardContainer {
+    .cardc {
         margin: 0;
         justify-content: center;
     }
@@ -385,14 +385,14 @@ body {
         align-items: center;
     }
 
-    .cardContainer {
+    .cardc {
         max-height: unset;
         overflow-y: unset;
         margin-bottom: 35vh;
     }
 
     .playbar {
-        right: 25px;
+        right: 20px;
     }
 }
 
@@ -405,7 +405,7 @@ body {
         padding: 2px;
     }
 
-    .buttons>* {
+    .btn>* {
         margin: 0 6px;
     }
 
@@ -413,7 +413,7 @@ body {
         padding: 7px;
     }
 
-    .spotifyPlaylists h1 {
+    .playlists h1 {
         padding: 4px;
     }
 

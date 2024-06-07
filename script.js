@@ -79,7 +79,7 @@ async function displayAlbums() {
     let div = document.createElement("div")
     div.innerHTML = response;
     let anchors = div.getElementsByTagName("a")
-    let cardContainer = document.querySelector(".cardContainer")
+    let cardc = document.querySelector(".cardc")
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
@@ -88,14 +88,10 @@ async function displayAlbums() {
 
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
-            cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card">
-            <div class="play">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
-                        stroke-linejoin="round" />
-                </svg>
-            </div>
+            cardc.innerHTML = cardc.innerHTML + ` <div data-folder="${folder}" class="card">
+                        <div class="play">
+                            <img width="20px" src="imgs/play.svg" alt="">
+                        </div>
 
             <img src="/songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
@@ -180,7 +176,7 @@ async function main() {
         }
     })
 
-    e
+
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         console.log("Setting volume to", e.target.value, "/ 100")
         currentSong.volume = parseInt(e.target.value) / 100
